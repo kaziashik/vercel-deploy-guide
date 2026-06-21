@@ -169,7 +169,7 @@ Create this **before** deploying, so Vercel knows how to route requests:
 ```bash
 vercel --prod
 ```
-
+<img src="https://i.ibb.co.com/dgH40d3/Screenshot-3.jpg"/>
 ---
 
 ## 📁 Final Project Structure
