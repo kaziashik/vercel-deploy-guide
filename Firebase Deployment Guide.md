@@ -1,31 +1,32 @@
 # 🔥 Firebase Deployment Guide
 
 A complete step-by-step guide to deploy a project on **Firebase** (Hosting, Functions, Firestore, Storage).
+Keep this as a personal reference note in your GitHub repo.
 
 ---
 
 ## 📋 Table of Contents
 
-1. [Prerequisites](#prerequisites)
-2. [Install Firebase CLI](#install-firebase-cli)
-3. [Login to Firebase](#login-to-firebase)
-4. [Create / Select a Firebase Project](#create--select-a-firebase-project)
-5. [Initialize Firebase in Your Project](#initialize-firebase-in--project)
-6. [Build Your Project](#build--project)
-7. [Deploy to Firebase Hosting](#deploy-to-firebase-hosting)
-8. [Deploy Firestore Rules & Indexes](#deploy-firestore-rules--indexes)
-9. [Deploy Cloud Functions](#deploy-cloud-functions)
-10. [Deploy Storage Rules](#deploy-storage-rules)
-11. [Deploy Everything at Once](#deploy-everything-at-once)
-12. [Useful Firebase CLI Commands](#useful-firebase-cli-commands)
-13. [Common Errors & Fixes](#common-errors--fixes)
-14. [Quick Checklist](#quick-checklist)
+1. [Prerequisites](#1-prerequisites)
+2. [Install Firebase CLI](#2-install-firebase-cli)
+3. [Login to Firebase](#3-login-to-firebase)
+4. [Create / Select a Firebase Project](#4-create--select-a-firebase-project)
+5. [Initialize Firebase in Your Project](#5-initialize-firebase-in-your-project)
+6. [Build Your Project](#6-build-your-project)
+7. [Deploy to Firebase Hosting](#7-deploy-to-firebase-hosting)
+8. [Deploy Firestore Rules & Indexes](#8-deploy-firestore-rules--indexes)
+9. [Deploy Cloud Functions](#9-deploy-cloud-functions)
+10. [Deploy Storage Rules](#10-deploy-storage-rules)
+11. [Deploy Everything at Once](#11-deploy-everything-at-once)
+12. [Useful Firebase CLI Commands](#12-useful-firebase-cli-commands)
+13. [Common Errors & Fixes](#13-common-errors--fixes)
+14. [Quick Checklist](#14-quick-checklist)
 
 ---
 
 ## 1. Prerequisites
 
-- A [Firebase account](https://console.firebase.google.com/) (use  Google account)
+- A [Firebase account](https://console.firebase.google.com/) (use your Google account)
 - [Node.js](https://nodejs.org/) installed (LTS version recommended)
 - Your project code ready (React, Vue, Angular, plain HTML/CSS/JS, etc.)
 - npm or yarn installed
@@ -57,7 +58,7 @@ firebase --version
 
 ## 3. Login to Firebase
 
-Login with  Google account from the terminal:
+Login with your Google account from the terminal:
 
 ```bash
 firebase login
@@ -76,7 +77,7 @@ This opens a browser window — sign in and grant access.
 
 1. Go to [Firebase Console](https://console.firebase.google.com/)
 2. Click **Add Project** → give it a name → follow the setup steps
-3. Once created, note  **Project ID**
+3. Once created, note your **Project ID**
 
 To list projects from CLI:
 
@@ -88,7 +89,7 @@ firebase projects:list
 
 ## 5. Initialize Firebase in Your Project
 
-Navigate to  project folder:
+Navigate to your project folder:
 
 ```bash
 cd my-project
@@ -152,7 +153,7 @@ Make sure the `firebase.json` `"public"` field points to this build folder (e.g.
 
 ## 7. Deploy to Firebase Hosting
 
-Deploy  site:
+Deploy your site:
 
 ```bash
 firebase deploy --only hosting
@@ -161,14 +162,14 @@ firebase deploy --only hosting
 After deployment, you'll get a live URL like:
 
 ```
-https://-project-id.web.app
+https://your-project-id.web.app
 ```
 
 ---
 
 ## 8. Deploy Firestore Rules & Indexes
 
-If  project uses Firestore:
+If your project uses Firestore:
 
 ```bash
 firebase deploy --only firestore:rules
@@ -292,4 +293,4 @@ This deploys Hosting + Firestore + Functions + Storage (whatever is configured i
 
 ---
 
-*Last updated: keep this file versioned in  repo and update commands as Firebase CLI evolves.*
+*Last updated: keep this file versioned in your repo and update commands as Firebase CLI evolves.*
