@@ -1,7 +1,7 @@
 
 ##Befor Deployemtn command out un_nasasery console.log
 
-### For this Open Global Search (VS Code)
+-- For this Open Global Search (VS Code)
 
 --Use the global search feature:
 - **Windows / Linux:** `Ctrl + Shift + F`  
