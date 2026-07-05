@@ -1,3 +1,18 @@
+
+##Befor Deployemtn command out un_nasasery console.log
+
+# For this Open Global Search (VS Code)
+
+--Use the global search feature:
+- **Windows / Linux:** `Ctrl + Shift + F`  
+- **Mac:** `Cmd + Shift + F`
+
+- This allows you to search across the entire project.== then command out not use console.loc()
+
+#Only keep meaningful error tracking:
+
+
+
 ## Server Deployment steps
 
 1. comment await commands outside api methods for solving gateway timeout error
