@@ -166,6 +166,20 @@ Create this **before** deploying, so Vercel knows how to route requests:
 
 ## 🚀 9. Deploy to Vercel
 
+npm run build
+npm start          # Test the built app
+vercel             # Create a preview deployment
+# Test the preview URL
+vercel --prod      # Deploy to production if everything looks good
+
+For most professional teams, the workflow is:
+
+✅ npm run build
+✅ npm start (or vercel dev)
+✅ vercel (preview deployment)
+✅ Verify the preview URL
+✅ vercel --prod
+
 ```bash
 vercel --prod
 ```
