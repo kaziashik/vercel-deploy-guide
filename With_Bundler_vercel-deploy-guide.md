@@ -173,12 +173,12 @@ vercel             # Create a preview deployment
 vercel --prod      # Deploy to production if everything looks good
 
 ###For most professional teams, the workflow is:
-
--✅ npm run build
--✅ npm start (or vercel dev)
--✅ vercel (preview deployment)
--✅ Verify the preview URL
--✅ vercel --prod
+-- first build the projet then test it with npm start or vercel dev-- then for preview deployment vercel then for production vercel --prod
+- ✅ npm run build 
+- ✅ npm start (or vercel dev)
+- ✅ vercel (preview deployment)
+- ✅ Verify the preview URL
+- ✅ vercel --prod
 
 ```bash
 vercel --prod
