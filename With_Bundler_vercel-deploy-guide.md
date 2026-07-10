@@ -46,7 +46,7 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
   entry: ["src/server.ts"],
-  format: ["esm", "cjs"], // outputs dist/server.js (cjs) + dist/server.mjs (esm)
+  format: ["esm"], // Keep this as ESM
   target: "esnext",
   outDir: "dist",
   clean: true,
@@ -54,14 +54,16 @@ export default defineConfig({
   splitting: false,
   sourcemap: true,
 
-  // Fix require() compatibility — ESM build only.
-  banner: ({ format }) =>
-    format === "esm"
-      ? {
-          js: `import { createRequire } from 'module'; const require = createRequire(import.meta.url);`,
-        }
-      : {},
+  // Add this banner to shim require() for CJS dependencies
+
+  banner: {
+    js: `
+   import { createRequire } from 'module';
+   const require = createRequire(import.meta.url);
+  `,
+  },
 });
+
 ```
 
 > ⚠️ **Fix from the original draft:** the banner must be scoped to the
